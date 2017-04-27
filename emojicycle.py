@@ -3,6 +3,7 @@ import requests
 import sys
 import json
 import os
+import sleep
 
 status = "stuff"
 
@@ -28,6 +29,7 @@ def main():
                 json_data = {"status_text":status,"status_emoji":emoji}
                 params = {'token':token,'profile': json.dumps(json_data)}
                 r = requests.post(url, params=params)
+                time.sleep(3)
     except:
        print "[!] Uh Oh..."
        sys.exit(0)
