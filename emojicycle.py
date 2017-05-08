@@ -3,7 +3,7 @@ import requests
 import sys
 import json
 import os
-import sleep
+import time
 
 status = "stuff"
 
